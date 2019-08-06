@@ -11,8 +11,11 @@
 "tag_application" = "cicd"
 "count" = "1"
 
-
 /////If necessary://////////////////////
 //"origin"="danf"
 //"route53_zone_name" = "Z2GLGMM0F862K7"
 //"route53_zone_id" = "chef-demo.com"
+
+//Dont change below unless you know what to choose
+"server_instance_type" = "t2.micro"
+"project_ami" = "ami-0036ab7a"

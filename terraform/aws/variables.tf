@@ -6,8 +6,8 @@ variable "aws_region" {
 }
 /////////////////////////////////
 //////////Route53 Settings///////
-variable "route53_zone_id" {}
-variable "route53_zone_name" {}
+//variable "route53_zone_id" {}
+//variable "route53_zone_name" {}
 ////////////////////////////////
 //////////AWS Key Info/////////
 variable "aws_key_pair_file" {}
@@ -15,13 +15,17 @@ variable "aws_key_pair_name" {}
 /////////////////////////////////
 ////////////////////////////////
 ////AWS Server Settings///////////
+variable "sever-ami" {
+  default = "ami-0e11a21e1fde8dc1a"
+}
+
 variable "aws_image_user" {
   default = "centos"
 }
-variable "test_server_instance_type" {
-  default = "m5.large"
+variable "server_instance_type" {
+  default = "t2.micro"
 }
-vairbale "count" { 
+variable "count" { 
   default = "1" 
 }
 
@@ -49,4 +53,4 @@ variable "tag_ttl" {
 variable "channel" { default = "stable" }
 variable "dev_channel" { default = "unstable" }
 variable "prod_channel" { default = "stable" }
-variable "origin" {}
+variable "origin" { default = "danf"}

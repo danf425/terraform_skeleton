@@ -6,8 +6,8 @@ resource "aws_instance" "Project_Name" {
     private_key = "${file("${var.aws_key_pair_file}")}"
   }
 
-  ami                         = "${data.aws_ami.centos.id}"
-  instance_type               = "${var.test_server_instance_type}"
+  ami                         = "${var.PROJECTNAME-ami}"
+  instance_type               = "${var.server_instance_type}"
   key_name                    = "${var.aws_key_pair_name}"
   subnet_id                   = "${aws_subnet.PROJECTNAME_subnet.id}"
   vpc_security_group_ids      = ["${aws_security_group.PROJECTNAME.id}", "${aws_security_group.PROJECTNAME.id}"]
@@ -22,3 +22,4 @@ resource "aws_instance" "Project_Name" {
     X-Contact     = "${var.tag_contact}"
     X-TTL         = "${var.tag_ttl}"
   }
+}
