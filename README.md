@@ -5,8 +5,8 @@
 * SETUP 
 1. Clone this repo:
 
-  `git clone git@github.com:danf425/terraform_skeleton.git terraform_skeleton_`
-  `cd terraform_skeleton_`
+  `git clone git@github.com:danf425/terraform_skeleton.git terraform_skeleton_`__
+  `cd terraform_skeleton_`__
 
 2. Change all instances of PROJECTNAME TO your own project name:
 
@@ -16,7 +16,7 @@
   `find ./ -type f -exec sed -i '' -e 's/Project_Name/project_1/g' {} \;`
 4. Change projectname.tf name to match Project_Name above:
 
-   `mv terraform/aws/projectname.tf terraform/aws/PROJECTNAME.tf`
+   `mv terraform/aws/projectname.tf terraform/aws/project1.tf`
 
 
 * AWS Terraform
