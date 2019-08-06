@@ -17,8 +17,9 @@ sed -i "/fqdn =/c $fqdn_string" config.toml
 
 sudo ./chef-automate deploy config.toml --accept-terms-and-mlsa --skip-preflight
 
-//////////////////////////////////////////////////////////
-//////Add the following to your projectname.tf////////////
+
+#########Add the following to your projectname.tf##########
+###########################################################
 #   provisioner "file" {
 #     content     = "${data.template_file.deploy-chef-automate.rendered}"
 #     destination = "/tmp/deploy-chef-automate.sh"
