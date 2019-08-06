@@ -29,4 +29,4 @@
    - `terraform destroy`  
 
 
-##### Find template information in https://github.com/danf425/terraform_skeleton/tree/master/terraform/templates
+##### Find how to use pre-made templates here: https://github.com/danf425/terraform_skeleton/tree/master/terraform/templatesgit
