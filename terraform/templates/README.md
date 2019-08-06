@@ -23,3 +23,7 @@ provisioner "remote-exec" {
     ]
 }
 ```
+
+
+# Requirements:
+ - Automate requires t2.large
