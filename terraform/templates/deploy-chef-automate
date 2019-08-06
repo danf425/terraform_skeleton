@@ -16,18 +16,3 @@ fqdn_string="  fqdn = '$public_ipv4'"
 sed -i "/fqdn =/c $fqdn_string" config.toml
 
 sudo ./chef-automate deploy config.toml --accept-terms-and-mlsa --skip-preflight
-
-
-#########Add the following to your projectname.tf##########
-###########################################################
-#   provisioner "file" {
-#     content     = "${data.template_file.deploy-chef-automate.rendered}"
-#     destination = "/tmp/deploy-chef-automate.sh"
-#   }
-
-#   provisioner "remote-exec" {
-#     inline = [
-#       "chmod +x /tmp/deploy-chef-automate.sh",
-#       "sudo /tmp/deploy-chef-automate.sh",
-#     ]
-#   }
