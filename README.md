@@ -2,7 +2,7 @@
 
 ## Skeleton to create an AWS image
 
-######SETUP:
+###SETUP:
 1. Clone this repo (where project1 is your project name):  
   `git clone git@github.com:danf425/terraform_skeleton.git project1`  
   `cd project1`  
@@ -16,7 +16,7 @@
 4. Change projectname.tf name to match Project_Name above:  
    `mv terraform/aws/projectname.tf terraform/aws/project1.tf`  
   
-######AWS Terraform
+###AWS Terraform
 1. Move to terraform/aws: `cd terraform aws`
 2. Initialize terraform: `terraform init`
 3. Validate: `terraform validate`
