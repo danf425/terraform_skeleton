@@ -15,8 +15,8 @@ variable "aws_key_pair_name" {}
 /////////////////////////////////
 ////////////////////////////////
 ////AWS Server Settings///////////
-variable "sever-ami" {
-  default = "ami-0e11a21e1fde8dc1a"
+variable "project_ami" {
+  default = "ami-0036ab7a"
 }
 
 variable "aws_image_user" {

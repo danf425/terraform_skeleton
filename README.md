@@ -17,8 +17,13 @@
    - `mv terraform/aws/projectname.tf terraform/aws/project1.tf`  
   
 ##### AWS Terraform
-1. Move to terraform/aws: - `cd terraform aws`
-2. Initialize terraform: - `terraform init`
-3. Validate: - `terraform validate`
-4. Spin up instance: - `terraform apply`
-5. Destroy after: - `terraform destroy`
+1. Move to terraform/aws:  
+   - `cd terraform/aws`  
+2. Initialize terraform:  
+   - `terraform init`  
+3. Validate:  
+   - `terraform validate`  
+4. Spin up instance:  
+   - `terraform apply`  
+5. Destroy after:  
+   - `terraform destroy`  
