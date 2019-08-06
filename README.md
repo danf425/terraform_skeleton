@@ -27,3 +27,6 @@
    - `ssh -i ~/.ssh/dmontanez-aws centos@YOURPUBLICIP`
 00. Destroy (if you want):  
    - `terraform destroy`  
+
+
+##### Find template information in https://github.com/danf425/terraform_skeleton/tree/master/terraform/templates
