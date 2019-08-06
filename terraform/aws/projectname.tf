@@ -6,7 +6,7 @@ resource "aws_instance" "Project_Name" {
     private_key = "${file("${var.aws_key_pair_file}")}"
   }
 
-  ami                         = "${var.PROJECTNAME-ami}"
+  ami                         = "${var.project_ami}"
   instance_type               = "${var.server_instance_type}"
   key_name                    = "${var.aws_key_pair_name}"
   subnet_id                   = "${aws_subnet.PROJECTNAME_subnet.id}"
