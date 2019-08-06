@@ -9,7 +9,7 @@ data "template_file" "deploy-chef-automate" {
 }
 ```
 
-2. Add the executable within instance of `projectname.tf`     e.g.
+2. Add the executable within the `aws_instance` resource of `projectname.tf`     e.g.
 ```
 provisioner "file" {
     content     = "${data.template_file.deploy-chef-automate.rendered}"
