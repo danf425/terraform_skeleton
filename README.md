@@ -13,7 +13,7 @@
 4. Change projectname.tf name to match Project_Name above:  
    - `mv terraform/aws/projectname.tf terraform/aws/project1.tf`  
   
-##### AWS Terraform
+##### AWS TERRAFORM:
 0. If you are using Okta: - `okta_aws solutions-architects`
 1. Move to terraform/aws:  
    - `cd terraform/aws`  
