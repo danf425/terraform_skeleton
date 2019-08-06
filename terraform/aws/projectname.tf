@@ -33,7 +33,7 @@ resource "aws_instance" "Project_Name" {
       "chmod +x /tmp/deploy-chef-automate.sh",
       "sudo /tmp/deploy-chef-automate.sh",
     ]
-
+  }
 }
 
 ////////////////////////////////
