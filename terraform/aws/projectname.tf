@@ -23,17 +23,17 @@ resource "aws_instance" "Project_Name" {
     X-TTL         = "${var.tag_ttl}"
   }
 
-  provisioner "file" {
-    content     = "${data.template_file.deploy-chef-automate.rendered}"
-    destination = "/tmp/deploy-chef-automate.sh"
-  }
+  # provisioner "file" {
+  #   content     = "${data.template_file.deploy-chef-automate.rendered}"
+  #   destination = "/tmp/deploy-chef-automate.sh"
+  # }
 
-  provisioner "remote-exec" {
-    inline = [
-      "chmod +x /tmp/deploy-chef-automate.sh",
-      "sudo /tmp/deploy-chef-automate.sh",
-    ]
-  }
+  # provisioner "remote-exec" {
+  #   inline = [
+  #     "chmod +x /tmp/deploy-chef-automate.sh",
+  #     "sudo /tmp/deploy-chef-automate.sh",
+  #   ]
+  # }
 }
 
 ////////////////////////////////
