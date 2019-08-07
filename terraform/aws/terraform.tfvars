@@ -13,7 +13,7 @@
 
 /////If necessary://////////////////////
 //"origin"="danf"
-//"route53_zone_name" = "Z2GLGMM0F862K7"
+//"route53_zone_name" = "xxxxxxxxxxx"
 //"route53_zone_id" = "chef-demo.com"
 
 //Dont change below unless you know what to choose
